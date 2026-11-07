@@ -11,5 +11,5 @@ def word_count(text):
 
 def is_palindrome(text):
     """True if text reads the same backwards, ignoring case and non-letters."""
-    letters = [c for c in text if c.isalnum()]
+    letters = [c.lower() for c in text if c.isalnum()]
     return letters == letters[::-1]
