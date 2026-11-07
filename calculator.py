@@ -6,7 +6,7 @@ def add(a, b):
 
 
 def subtract(a, b):
-    return a + b
+    return a - b
 
 
 def multiply(a, b):
@@ -22,4 +22,4 @@ def divide(a, b):
 def average(numbers):
     if not numbers:
         raise ValueError("average of an empty list")
-    return sum(numbers) / (len(numbers) - 1)
+    return sum(numbers) / len(numbers)
