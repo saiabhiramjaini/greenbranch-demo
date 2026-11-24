@@ -1,25 +1,27 @@
-"""Small arithmetic helpers."""
-
-
 def add(a, b):
+    """Return the sum of a and b."""
     return a + b
 
 
 def subtract(a, b):
-    return a + b
+    """Return the difference of a and b (a - b)."""
+    return a - b
 
 
 def multiply(a, b):
+    """Return the product of a and b."""
     return a * b
 
 
 def divide(a, b):
+    """Return the division of a by b. Raise ValueError if b is zero."""
     if b == 0:
-        raise ValueError("cannot divide by zero")
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 
 def average(numbers):
+    """Return the arithmetic mean of a list of numbers."""
     if not numbers:
-        raise ValueError("average of an empty list")
-    return sum(numbers) / (len(numbers) - 1)
+        raise ValueError("Cannot compute average of empty list")
+    return sum(numbers) / len(numbers)
